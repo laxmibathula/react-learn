@@ -28,7 +28,7 @@ ReactDOM.render(
              <App />
             {Hours(3,3)}
 
-            {/* NaniAreaPage1 />  */}
+            {/* <NaniAreaPage1 name="Deepsika" /> */}
             <NaniAreaPage2 />
             {/* <NaniAreaPage3 /> */}
           </div>
