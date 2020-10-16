@@ -28,9 +28,14 @@ ReactDOM.render(
              <App />
             {Hours(3,3)}
 
-            {/* <NaniAreaPage1 name="Deepsika" /> */}
+           {/*<NaniAreaPage1 color="red"  name="world" />
+           <NaniAreaPage1 color="blue" name="hehdhhd" />*/}
+
+
+        
+ 
             <NaniAreaPage2 />
-            {/* <NaniAreaPage3 /> */}
+            {/*<NaniAreaPage3 />*/}
           </div>
         </React.Fragment>,
   document.getElementById('root'));

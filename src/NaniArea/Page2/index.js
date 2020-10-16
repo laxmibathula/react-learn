@@ -11,7 +11,8 @@ const list = [
 	{ name: 'name4', country: 'IND'}
 ];
 
-function Page2(){
+
+function Page2() {
   return (
   	<div className="nani-page1">
 	  	<Header /> 
@@ -21,7 +22,7 @@ function Page2(){
 			    <th>Name</th>
 			    <th>Country</th>			    
 			  </tr>
-		  </thead>
+		  </thead> 
 		  <tbody>
 		  	{
 		  	  list.map((eachObj, index) => {

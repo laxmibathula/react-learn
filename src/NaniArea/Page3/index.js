@@ -6,14 +6,15 @@ import Footer from '../Footer/index';
 
 class Page3 extends React.Component {
 	constructor(props) {
-		super(props);
+		super(props);	
+
 		this.state = {
 			email: ''
 		};
 	}
 
 	handleChange = (event) => {
-		console.log(event.target.value);
+		console.log(event.target.value);	
 
 		// Below is updating the state(input value)
 		this.setState({
@@ -27,6 +28,8 @@ class Page3 extends React.Component {
 	}
 
 	render() {
+
+		console.log('RE RENDER');
 		return (
 			<>
 				<Header /> 	
