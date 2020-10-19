@@ -13,7 +13,7 @@ const styles ={
 
 ReactDOM.render(
       <React.Fragment>
-          <h1 className="heading">  {` ${fname} ${lname}  React App`} </h1>
+          <h1 className="heading"> {fname} {lname}  React App </h1>
           <div className="content">
              <h1 contentEditable="true">Welcome to Indian cuisine</h1>
              <h4>menu</h4>
