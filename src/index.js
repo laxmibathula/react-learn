@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Header from './Table/Header/Header';
+import Count from './Table/Count/Count';
 import Body from './Table/Body/Body';
 
 import NaniAreaPage1 from './NaniArea/Page1/index';
@@ -14,6 +15,8 @@ import NaniAreaPage1 from './NaniArea/Page1/index';
 ReactDOM.render(
       <React.Fragment>
       <Header />
+      <Count />
       <Body />
       </React.Fragment>,
-  document.getElementById('root'));
+  document.getElementById('root')
+);

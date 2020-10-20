@@ -1,0 +1,16 @@
+.counter{
+    /* border: 3px solid blue; */
+    margin: auto;
+    width: 920px;
+    margin-top: 35px;
+    color:  #5c145c;
+    display: flex;
+    justify-content: space-around;
+}
+.title{
+     flex-grow: 2;
+}
+.total{
+     /* border: 1px solid red; */
+     margin-right: 8px;
+}
