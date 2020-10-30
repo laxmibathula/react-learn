@@ -7,7 +7,7 @@ function  Header(){
         <div className="head">    
           <div className="inhead"> 
             <h2 >Welcome to Facebook</h2>
-            <button>Log Out</button>
+            <button className='logout'>Log Out</button>
           </div>
         </div> 
         
