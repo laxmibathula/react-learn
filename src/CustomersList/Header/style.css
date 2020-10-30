@@ -7,7 +7,6 @@ body{
     margin: 0 0 3px 0;
     width: 100%;
     height: 50px;
-    /* border: 2px solid rgb(0, 255, 64); */
     background-color: #5c145c;
     display: flex;
     justify-content: center;
@@ -17,7 +16,6 @@ body{
 .head .inhead{
    margin: 0;
     width: 60%;
-    /* border: 2px solid blue; */
     background-color: #5c145c;
     color: white;
     display: flex;
@@ -25,7 +23,6 @@ body{
     align-items: center;
 }
 .inhead #username{
-    /* border: 1px solid red; */
     flex-grow: 2;
     text-align: end;
     padding-right: 25px;
@@ -36,5 +33,4 @@ body{
   height: 25px;
   background-color:white;
   color: rgb(41, 13, 199);
-  /* margin-right: 8px;      */
 } 

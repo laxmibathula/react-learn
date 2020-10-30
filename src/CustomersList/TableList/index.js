@@ -1,19 +1,21 @@
 import React from 'react';
-import './Body.css';
+import './style.css';
 
 
-function Body(){
+function TableList(){
     return(
-        <>
-                   <table className='body'>
+     
+                <table className='customers_table'>
+                   <thead className="table_head">
                       <tr> 
                            <th>Id</th> 
                            <th>Name</th> 
                            <th>Address</th> 
                            <th>Email</th> 
                            <th>Password</th>
-                    
                       </tr>
+                    </thead>
+                    <tbody className="table_data">
                       <tr>
                            <td>1</td>
                            <td>Jill</td>
@@ -49,11 +51,11 @@ function Body(){
                         <td>9hjgbk4</td>
                         <td>7879</td>
                       </tr>
-
-                   </table>
-        </>
+                    </tbody>
+                </table>
+        
 
     )
 }
 
-export default Body;
+export default TableList;
