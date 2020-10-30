@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import CustomersList from './CustomersList';
+import CustomerList from './CustomerList';
 
-ReactDOM.render(<CustomersList />,document.getElementById('root'));
+ReactDOM.render(<CustomerList />,document.getElementById('root'));

@@ -5,8 +5,8 @@ import './style.css';
 function TableList(){
     return(
      
-                <table className='customers_table'>
-                   <thead className="table_head">
+                <table className='customers-table'>
+                   <thead className="table-head">
                       <tr> 
                            <th>Id</th> 
                            <th>Name</th> 
@@ -15,7 +15,7 @@ function TableList(){
                            <th>Password</th>
                       </tr>
                     </thead>
-                    <tbody className="table_data">
+                    <tbody className="table-data">
                       <tr>
                            <td>1</td>
                            <td>Jill</td>

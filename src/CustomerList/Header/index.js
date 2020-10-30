@@ -3,14 +3,14 @@ import './style.css';
 
 function  Header(){
     return(
-          <>
-          <div className="head">    
+          
+        <div className="head">    
           <div className="inhead"> 
             <h2 >Welcome to Facebook</h2>
             <button>Log Out</button>
           </div>
-          </div> 
-          </>
+        </div> 
+        
     )
 }
 
