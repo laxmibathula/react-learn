@@ -1,0 +1,8 @@
+.page3-body {
+	padding: 15px;
+	height: 200px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

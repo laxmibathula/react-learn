@@ -1,0 +1,14 @@
+.counter{
+    margin: auto;
+    width: 920px;
+    margin-top: 35px;
+    color:  #5c145c;
+    display: flex;
+    justify-content: space-around;
+}
+.title{
+     flex-grow: 2;
+}
+.total{
+     margin-right: 8px;
+}

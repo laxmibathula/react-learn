@@ -1,0 +1,32 @@
+.head{
+    margin: 0 0 3px 0;
+    width: 100%;
+    height: 50px;
+    background-color: #5c145c;
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+}
+.head .inhead{
+   margin: 0;
+    width: 60%;
+    background-color: #5c145c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inhead #username{
+    flex-grow: 2;
+    text-align: end;
+    padding-right: 25px;
+    
+}
+.logout{  
+  border: none;
+  height: 25px;
+  width: 60px;
+  background-color:white;
+  color: rgb(41, 13, 199);
+} 

@@ -1,20 +1,7 @@
 *{
   margin: 0;
-  padding: 0; 
+  padding: 0;  
 }
-.heading{
-  color: darkblue;
-  text-align: center;
-  text-decoration: underline;
-}
-.content{
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.content img{
-  width: 200px;
-  height: 300px;
+body{
+  background-color:#ffffcc;
 }
