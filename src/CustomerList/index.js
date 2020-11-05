@@ -1,8 +1,8 @@
 import React from 'react';
 import './index.css'
-import Header from '../Components/Header';
+import Header from '../components/Header';
 import Count from './Count/index';
-import TableList from '../Components/TableList';
+import TableList from '../components/TableList';
 
 
 class CustomerList extends React.Component {
@@ -45,10 +45,11 @@ class CustomerList extends React.Component {
                     <>
                         <Header />
                         <Count />
-                        <TableList data = {list} />
+                        <TableList headers={["Id","Name","Address","Email","password"]} list = {list} />
                      </>
                   )
         }
     }
 
+  
 export default CustomerList;

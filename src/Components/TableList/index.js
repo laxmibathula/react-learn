@@ -4,18 +4,20 @@ import './style.css';
 const  TableList = (props) => {
     return(
         <table className='customers-table'>
-               <thead className="table-head">
+            <thead className="table-head">
+                {
                     <tr> 
-                       <th>Id</th> 
-                       <th>Name</th> 
-                       <th>Address</th> 
-                       <th>Email</th> 
-                       <th>Password</th>
+                       <th>{props.headers[0]}</th> 
+                       <th>{props.headers[1]}</th> 
+                       <th>{props.headers[2]}</th> 
+                       <th>{props.headers[3]}</th> 
+                       <th>{props.headers[4]}</th>
                     </tr>
+               }
              </thead>
              <tbody className="table-data">
                 {
-                  props.data.map((value,index) => {
+                  props.list.map((value,index) => {
                         return( <tr key={index}>
                                     <td>{value.id}</td>
                                     <td>{value.name}</td>
