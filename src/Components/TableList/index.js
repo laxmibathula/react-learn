@@ -2,8 +2,7 @@ import React from 'react';
 import './style.css';
 
 const  TableList = (props) => {
-    console.log(props.headers);
-    console.log(props.list);
+   
     return(
         <table className='customers-table'>
             <thead className="table-head">

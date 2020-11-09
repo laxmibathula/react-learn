@@ -1,0 +1,26 @@
+
+.customers-table{
+    background-color: #5c145c;
+    width: 920px;
+    margin: auto;
+    margin-top: 20px; 
+    border-collapse: collapse; 
+}
+.table-data{
+    text-align: center;
+    color:  #ffff4d;
+}
+.table-head{
+    color:  white;
+    font-size: x-large;  
+}
+.table-head > tr th {
+    border: 1px solid black;
+    border-color: rgba(251, 255, 0, 0.966);
+    padding: 10px; 
+}
+.table-data > tr td {
+    border: 1px solid black;
+    border-color: rgba(251, 255, 0, 0.966);
+    padding: 10px; 
+}

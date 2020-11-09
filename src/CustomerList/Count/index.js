@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.css';
-     
 function Count(){
         return(
             <div  className='counter'>
