@@ -12,12 +12,15 @@
 }
 .table-head{
     color:  white;
-    font-size: x-large;  
+    font-size: x-large; 
+    text-align: center;  
 }
-.table-head > tr th {
+.table-head >tr th{
     border: 1px solid black;
     border-color: rgba(251, 255, 0, 0.966);
-    padding: 10px; 
+    border-collapse: collapse; 
+    padding: 10px;
+    
 }
 .table-data > tr td {
     border: 1px solid black;

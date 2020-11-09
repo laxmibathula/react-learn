@@ -45,7 +45,16 @@ class CustomerList extends React.Component {
                     <>
                         <Header />
                         <Count />
-                        <TableList headers={["Id","Name","Address","Email","password"]} list = {list} />
+                        <TableList 
+                          headers={[
+                            {key:"id",display:"ID"},
+                            {key:"name",display:"NAME"},
+                            {key:"address",display:"ADDRESS"},
+                            {key:"Email",display:"EMAIL"},
+                            {key:"password",display:"PASSWORD"}
+                          ]} 
+                          list={list}
+                        />
                      </>
                   )
         }
