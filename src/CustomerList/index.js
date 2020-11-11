@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css'
-<<<<<<< HEAD
 import Header from '../components/Header';
 import Count from './Count/index';
 import TableList from '../components/TableList';
