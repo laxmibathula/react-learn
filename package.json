@@ -28,6 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "dev": "webpack",
+    "prod-build": "webpack --config ./webpack.prod.config.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
