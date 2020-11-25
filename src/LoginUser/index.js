@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css';
 
 class LoginUser extends React.Component{  
     constructor(props) {
@@ -46,6 +47,7 @@ class LoginUser extends React.Component{
    render(){
     return(
         <div className="form">
+          <h1 className="name">welcome to Raji's Webpack</h1>
           <div className="email">
             <label for="email">Email or phone </label> <br />
             <input type="email"  name="email" onChange={this.myChangeHandler}/>
@@ -58,8 +60,8 @@ class LoginUser extends React.Component{
 
           <div className="log">
           <button type="submit" onClick={this.onSubmit}>submit</button>
-          </div>
-       </div> 
+          </div>  
+        </div> 
     
     )
    }

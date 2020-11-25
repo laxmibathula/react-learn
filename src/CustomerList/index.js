@@ -15,7 +15,7 @@ class CustomerList extends React.Component {
       }
     
       componentDidMount() {
-        fetch('http://localhost:8086/table-data',{
+        fetch('/table-data',{
           method:"GET",
           headers: {
             'Content-Type': 'application/json',
