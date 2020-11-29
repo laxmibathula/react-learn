@@ -49,12 +49,12 @@ class LoginUser extends React.Component{
         <div className="form">
           <h1 className="name">welcome to Raji's Webpack</h1>
           <div className="email">
-            <label for="email">Email or phone </label> <br />
+            <label htmlFor="email">Email or phone </label> <br />
             <input type="email"  name="email" onChange={this.myChangeHandler}/>
           </div>
 
           <div className="pass">
-            <label for="password">password</label> <br />
+            <label htmlFor="password">password</label> <br />
             <input type="password" name="password" onChange={this.myChangeHandler} /><br />
           </div>
 
