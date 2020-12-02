@@ -21,7 +21,7 @@ import { loginUser } from '../actions/user';
       onSubmit = (e) => {
           e.preventDefault();
           const {email,password } = this.state;
-          this.props.buyCake(email,password)
+          this.props.loginUser(email,password)
       }   
      render(){
         const loading = this.props.login.loginLoading
@@ -60,7 +60,7 @@ import { loginUser } from '../actions/user';
   
   const mapDispatchToProps = dispatch => {
     return {
-      buyCake: (email,password) => dispatch(loginUser(email,password))
+      loginUser: (email,password) => dispatch(loginUser(email,password))
     }
   }
   

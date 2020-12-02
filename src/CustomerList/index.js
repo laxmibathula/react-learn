@@ -39,7 +39,6 @@ class CustomerList extends React.Component {
 const mapStateToProps = state => {
   return {
     user: state.user,
-    error: state.user.error
   }
 }
 

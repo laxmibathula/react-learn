@@ -6,13 +6,13 @@ import { Router, Route, Link, Switch, Redirect } from "react-router-dom";
 import history from './router-history';
 import { Provider } from 'react-redux';
 import store from './store';
-import LoginContainer from './LoginContainer';
+import LoginUserContainer from './LoginUserContainer';
 
 ReactDOM.render((
   <Provider store={store}>
     <Router history = {history}>
         <Switch>
-          <Route path = "/" exact component = {LoginContainer} />
+          <Route path = "/" exact component = {LoginUserContainer} />
           <Route path = "/customer-list" component = {CustomerList} /> 
         </Switch>
     </Router>

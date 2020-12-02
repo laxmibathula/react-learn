@@ -27,11 +27,11 @@ export const loginUser = (email,password) => {
         })      
         .then((response) => {
             if(response.status == 400){
-              alert("invalid user");
               e.preventDefault();
+               return "login failed";
             }
             else 
-            return response.json();
+               return response.json();
         })
         .then((data) =>{
             const userObject = data[0];
@@ -39,7 +39,6 @@ export const loginUser = (email,password) => {
             resolve(userObject);
         })
         .catch((error) => {
-            alert("somthing went wrong");
             reject(error);	
         })
     })
