@@ -1,9 +1,7 @@
 import * as userApi from '../api/user';
-import {createBrowserHistory} from 'history';
+import history from '../router-history';
 import {FETCH_USERS_REQUEST,FETCH_USERS_SUCCESS,FETCH_USERS_FAILURE} from '../constants/user';
 import {LOGIN_USER_REQUEST,LOGIN_USER_SUCCESS,LOGIN_USER_FAILURE} from '../constants/user';
-
-const history = createBrowserHistory();
 
 export const loginUser = (email,password) => {
   return (dispatch) => {
