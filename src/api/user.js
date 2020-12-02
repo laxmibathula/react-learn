@@ -34,8 +34,9 @@ export const loginUser = (email,password) => {
             return response.json();
         })
         .then((data) =>{
-            console.log(data);
-            resolve(data);
+            const userObject = data[0];
+            console.log("userObject",userObject);
+            resolve(userObject);
         })
         .catch((error) => {
             alert("somthing went wrong");

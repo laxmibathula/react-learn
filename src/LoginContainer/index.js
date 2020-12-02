@@ -24,14 +24,14 @@ import { loginUser } from '../actions/user';
           this.props.buyCake(email,password)
       }   
      render(){
-        const loading = this.props.login.login_loading
+        const loading = this.props.login.loginLoading
         if(loading){
           alert(loading);
         }
       return(
           <div className="form">
             <h1 className="name">welcome to Raji's React-Webpack-Redux</h1>
-            <h2>{JSON.stringify(this.props.login.login_list)}</h2>
+            <h2>{JSON.stringify(this.props.login.loginUser.name)}</h2>
 
             <div className="email">
               <label htmlFor="email">Email or phone </label> <br />
@@ -53,7 +53,7 @@ import { loginUser } from '../actions/user';
   }
   const mapStateToProps = state => {
     return {
-      login: state.login
+      login: state.user
     }
   }
   

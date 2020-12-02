@@ -1,35 +1,53 @@
 import {FETCH_USERS_REQUEST,FETCH_USERS_SUCCESS,FETCH_USERS_FAILURE} from '../constants/user';
-  
+import {LOGIN_USER_REQUEST,LOGIN_USER_SUCCESS,LOGIN_USER_FAILURE} from '../constants/user';
+
  export const initialState = {
-    user_loading: false,
-    user_list: [],
-    user_error: '',
-    login_loading: false,
-    login_list: [],
-    login_error: ''
+    loginLoading: false,
+    loginUser: {},
+    loginError: '',
+    userLoading: false,
+    userList: [],
+    userError: ''
   }
   
-  const userReducer = (state = initialState, action) => {
+  const user = (state = initialState, action) => {
     switch (action.type) {
+      case LOGIN_USER_REQUEST:
+        return {
+          ...state,
+          loginLoading: true
+        }
+      case LOGIN_USER_SUCCESS:
+        return {
+            loginLoading: false,
+            loginUser: action.payload,
+            loginError: ''
+        }
+      case LOGIN_USER_FAILURE:
+        return {
+            loginLoading: false,
+            loginUser: {},
+            loginError: action.payload
+        }
       case FETCH_USERS_REQUEST:
         return {
           ...state,
-          user_loading: true
+          userLoading: true
         }
       case FETCH_USERS_SUCCESS:
         return {
-          user_loading: false,
-          user_list: action.payload,
-          user_error: ''
+          userLoading: false,
+          userList: action.payload,
+          userError: ''
         }
       case FETCH_USERS_FAILURE:
         return {
-          user_loading: false,
-          user_list: [],
-          user_error: action.payload
+          userLoading: false,
+          userList: [],
+          userError: action.payload
         }
       default: return state
     }
   }
   
-  export default userReducer;
+  export default user;

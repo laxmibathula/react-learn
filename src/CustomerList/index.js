@@ -13,20 +13,14 @@ class CustomerList extends React.Component {
 
     }
     componentDidMount() {
-        this.props.fetchUsers();
-       
+        this.props.fetchUsers();  
     }
     render() {
-          const { error,list } = this.state;
-          if(error){
-                return <div>Error: {error}</div>;
-          }
-          const userData = this.props.user.user_list;
+          const userList = this.props.user.userList;
           return(
                   <>
                       <Header />
                       <Count />
-                      {/* <h2>{JSON.stringify(this.props.list.users[0])}</h2> */}
                       <TableList 
                         headers={[
                           {key:"id",display:"ID"},
@@ -35,7 +29,7 @@ class CustomerList extends React.Component {
                           {key:"Email",display:"EMAIL"},
                           {key:"password",display:"PASSWORD"}
                         ]} 
-                        list={userData}
+                        list={userList}
                       />
                     </>
                 )
