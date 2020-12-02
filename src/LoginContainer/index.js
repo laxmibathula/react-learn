@@ -26,8 +26,9 @@ import { loginUser } from '../actions/user';
      render(){
         const loading = this.props.login.login_loading
         if(loading){
-          alert(loading);
+          return (<div>loging...</div>)
         }
+
       return(
           <div className="form">
             <h1 className="name">welcome to Raji's React-Webpack-Redux</h1>
