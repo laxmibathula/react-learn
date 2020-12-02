@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css'
+import './style.css';
 import Header from '../components/Header';
 import Count from './Count/index';
 import TableList from '../components/TableList';
@@ -10,13 +10,13 @@ class CustomerList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {}
-
     }
     componentDidMount() {
         this.props.fetchUsers();  
     }
     render() {
           const userList = this.props.user.userList;
+          console.log("userList is ", userList );
           return(
                   <>
                       <Header />
